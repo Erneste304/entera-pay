@@ -1,21 +1,19 @@
 {
   "name": "entera-pay",
-  "version": "1.0.0",
-  "description": "A unified platform to manage, distribute, and pay for films, music, videos, and entertainment content — connecting creators, managers, sponsors, and investors in one ecosystem.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Where Entertainment Meets Payment — manage, distribute, and pay for films, music, videos.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Erneste304/entera-pay.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Erneste304/entera-pay/issues"
-  },
-  "homepage": "https://github.com/Erneste304/entera-pay#readme"
+  "keywords": ["entertainment", "payments", "creators", "sponsors", "investors"],
+  "author": "Erneste304",
+  "license": "MIT"
 }
